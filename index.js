@@ -11,9 +11,10 @@ app.use('/assets', express.static(path.join(__dirname, 'assets')))
 // app.use('/assets', express.static(__dirname + 'assets'))
 //middleware de la ruta bootstrap
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'))
+app.use('/bootstrapjs', express.static(__dirname + '/node_modules/dist/js'))
 
 //middleware de la ruta jquery
-app.use('/bootstrapjs', express.static(__dirname + '/node_modules/dist/js'))
+app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist'))
 
 // app.use(express.static(__dirname + "/prueba"));
 
