@@ -1,3 +1,8 @@
-{{#each productos}}
-{{> Producto}}
-{{/each}}
+<h1 class="text-center mt-4">Bienvenido al mercado WEB, seleccione sus productos</h1>
+<div class="row p-3 container-fluid">
+  {{#each productos}}
+  <div class="col-4 d-flex justify-content-center text-center">
+    {{> Producto}}
+  </div>
+  {{/each}}
+</div>
